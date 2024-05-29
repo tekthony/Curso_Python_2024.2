@@ -3,14 +3,25 @@
 # Eliminar de la lista sin existe los datos de abel.
 # Buscar y mostrar el alumnos en la posicion 4 de la lista.
 
-alumnos:list=[]
+# Paso 1: Crear una lista con 5 alumnos
+alumnos = [
+    {"nombre": "Juan", "apellido": "Pérez", "edad": 20},
+    {"nombre": "María", "apellido": "López", "edad": 22},
+    {"nombre": "Carlos", "apellido": "García", "edad": 21},
+    {"nombre": "Ana", "apellido": "Martínez", "edad": 23},
+    {"nombre": "Luis", "apellido": "Hernández", "edad": 19}
+]
 
-lista=f"""
-__________LISTA DE ALUMNOS_________
+# Paso 2: Insertar al final de la lista los datos de Anthony
+anthony = {"nombre": "Anthony", "apellido": "Santos", "edad": 24}
+alumnos.append(anthony)
 
-1.- Jacindo Melarga.
-2.- 
+# Paso 3: Eliminar de la lista los datos del alumno llamado Abel si existe
+alumnos = [alumno for alumno in alumnos if alumno["nombre"].lower() != "abel"]
 
-
-"""
-
+# Paso 4: Buscar y mostrar el alumno en la posición 4 de la lista
+if len(alumnos) > 4:
+    alumno_pos4 = alumnos[4]
+    print("Alumno en la posición 4:", alumno_pos4)
+else:
+    print("No hay suficientes alumnos en la lista para mostrar la posición 4.")
