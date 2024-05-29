@@ -63,8 +63,83 @@ lista_nombres=["edith","ruth","luz"]
 lista_nombres.insert(0,"anthony")
 
 ```
+## 3. elmiminar elemetntos de una lista 
+``` python
+#METODO POP - es el metodo que elimina el ultimo elemento de una lista es el contrario de append.
+ lista_nombre=["edith","ruth","liz"]
+ lista_nombre.pop()
 
-###
+ #primera opcion  - metodomremove - este metodo elimina el por el nombre el elemento que coinsida dentro de mi lista.
+ #(por indice)
+
+ lista_nombre=["edith","ruth","liz"]
+ lista_nombre.remove("ruth")
+
+ #sefunda opcion - metodo pop -al pasarle por parametro un indice este lo eliminar de la lista.
+ #(numero)
+  ista_nombre=["edith","ruth","liz"]
+ lista_nombre.pop(0)
+```
+
+## 4. buscar un elemento en una lista
+ ```python 
+ lista_nombres=[edith","ruth"."lux"]
+ indice=lista_nombres[indice])
+
+
+ pertenencias="edith" in lista _nombres #tru false
+
+```
+## 5. Comparacion de listas:
+
+Podemos hacer uso de los operadores de comparacion para comparar listas:
+**Ejm**
+
+```python
+compara=[1,2,3]<[1,2,4]
+# 1 al primer elementos no xq son iguales en ambas listas.
+# 2  no  por que son iguales en ambas listas.
+# 3 evalua que es menor que 4.
+# entonces la primera lista es menor que la segunda lista.
+print(compara)
+#salida:
+```
+
+### 6. Cuidado con las copias.
+
+### 7. FE DE ERRATAS (Actualizar Listas)
+```python
+lista=[1,3,4,5,6]
+lista[0]=2
+print(lista)
+#[2,3,4,5,6]
+
+# modificando lista con diccionario:
+alumnos=[
+    {
+        "nombre":"abel",
+        "edad":15
+
+    },
+    {
+        "nombre":"charo",
+        "edad":20
+    }
+]
+alumnos[0]["edad"]=30
+print(alumnos)
+
+# alumnos[0]={"nombre":"mafer","edad":15}     para reemplazar todo el diccionario.
+# alumnos [1][sexo]="por definir" agregar una caracteristica mas a charo
+
+```
+
+
+
+
+
+
+
 
 
 

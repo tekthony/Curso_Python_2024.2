@@ -1,4 +1,4 @@
-# Crear una lista de 5 alumnos, cada alumnos almacenaremos su nombre, apellido y edad.
+# 1.-Crear una lista de 5 alumnos, cada alumnos almacenaremos su nombre, apellido y edad.
 # Insertar al final de la lista los datos de Anthony.
 # Eliminar de la lista sin existe los datos de abel.
 # Buscar y mostrar el alumnos en la posicion 4 de la lista.
@@ -25,3 +25,10 @@ if len(alumnos) > 4:
     print("Alumno en la posición 4:", alumno_pos4)
 else:
     print("No hay suficientes alumnos en la lista para mostrar la posición 4.")
+
+
+#2.- Crear una lista cn 3 diccionarios donde tendran los datos de sus mascotas(nombres, edad, sexo, raza)
+# Tareas
+# Mostrar la lista con los 4 diccionarios
+# Editar el 3er registroy cambiarle la edad sin modificar la lista original.
+# Mostrar la lista original y luego la lista con el 3er registro modificado.
