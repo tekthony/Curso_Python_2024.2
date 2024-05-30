@@ -32,3 +32,30 @@ else:
 # Mostrar la lista con los 4 diccionarios
 # Editar el 3er registroy cambiarle la edad sin modificar la lista original.
 # Mostrar la lista original y luego la lista con el 3er registro modificado.
+
+#yo como dueño de mi mascota
+#deseo ver una lista de mis mascotas
+#para tener un resumen o control de elllos
+
+
+#yo como dueño de mi mascota
+#deseoactializar la edad de mi mascota
+#para tener una lista correcta de mi amscota   #descrivir el por que de la secuencia y para que.
+
+
+# el director del tecnologico jose maria arguedas, desea actualizar el proceso academico de registros de notas de sus alumnos
+# con la siguiente aclaracion, los docentes podran poner las notas pero no podran editarlas.
+# solo los coordinadores de programa de estudios podran dar acceso de edicion de nota previa peticion del docente encargado,
+#los estudiantes solo podran ver sus notas y su porcentaje de la asistencia esta sera registrada a travez de un sensor detector en el ingreso del instituto y puerta del aula 
+# que se les asignara. 
+
+## yo como docente
+## puedo poner las notas 
+## por que soy el responsable de la unidad didactica.
+
+
+
+
+
+
+
