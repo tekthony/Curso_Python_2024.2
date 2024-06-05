@@ -56,31 +56,34 @@
 
 #UN EMPRESARIO DE ALQUILER DE AUTOS DESEA GUARADAR EN UNA BASE DE DATOS LA INFORMACION 
 #DE SUS VEHIVULOS, PROCESO QUE DESEA AUTOMATIZAR CON UN SISTEMA INFORMATICO
-#LAS ACCIONES PUEDE REALIZAR EL EMPRESARIO SON VER LAS LISTAS DE AUTOS QUE TIENE , PODRA TAMBIEN ACTUALIZAR  LA #LISTA Y AGREGAN EN NUEVO VEHICULO.
+# #LAS ACCIONES PUEDE REALIZAR EL EMPRESARIO SON VER LAS LISTAS DE AUTOS QUE TIENE , PODRA TAMBIEN ACTUALIZAR  LA #LISTA Y AGREGAN EN NUEVO VEHICULO.
 
-lista_autos=[{
-        "placa":"adc254",
-        "año":2000,
-        "color":"azul",
-        "marca":"toyota"      
-    },{
-        "placa":"mdc254",
-        "año": 2018,
-        "color":"negro",
-        "marca":"suzuki"
-    },{
-        "placa":"kdc254",
-        "año":2022,
-        "color":"negro",
-        "marca":"hilux"
-    }
-]
+# lista_autos=[{
+#         "placa":"adc254",
+#         "año":2000,
+#         "color":"azul",
+#         "marca":"toyota"      
+#     },{
+#         "placa":"mdc254",
+#         "año": 2018,
+#         "color":"negro",
+#         "marca":"suzuki"
+#     },{
+#         "placa":"kdc254",
+#         "año":2022,
+#         "color":"negro",
+#         "marca":"hilux"
+#     }
+# ]
 #como empresario de autos
 #deseo tener la lista de autos
 #actualizar y agregar nuevo vehivulo
 
-print(lista_autos)
+# print(lista_autos)
 
 
 # crear una lista de los 20 numero primos haciendo uso de comprencion. 
 
+primeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
+
+print("Los primeros 20 números primos son:", primeros_primos)
