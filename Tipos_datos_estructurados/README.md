@@ -1,67 +1,55 @@
-# Tipos de datos estructurados(TDA - Tipos de datos abstractos)
-```python
-#lista= sus valores o elementos se pueden actualizar, eliminar.
+# TIPOS DE DATOS ESTRUCTURADOS (TDA - tipos de datos estrucutrados)
+```python 
+#sus valores o elemenmtos se pueden actualizar , elieminar
+lista=["abel",20.5.2,.5,False,["texto",.2]]
 
-lista=["abel".20,5.2,.5,False,["texto",.2]]
-
-#tupla= sus valores o elementos no pueden ser modificados o eliminados.
-
+#tupla -sus valores o elementos no pueden ser modificados o eliminados.
 tupla=("abel",20,5.2,False,[])
 
-#Diccionario o objetos
-# los diccionarios almacenan los datos con clave:valor
+#diccionarios u objetos
+#los diccionarios almacena los datsos con clve:valor 
+dicionario={"nombres":"antonio","edad":15,sexo:False}
 
-diccionario={"nombre":"Anthony", "edad":15 }
-```
-# OBSERVACION
+-[!TIP]
+-**observacion** que los tipos de datso estructuradospara almacenar en su interior otros tipos de datos estructurados
 
-- [!TIP]
-- **Observacion: ** Que los tipos de datos estructurados pueden almacenar en su interior otros tipos de datos estructurados.
-
-```python
 lista_alumnos=[
-    {
-        "nombre":"abel",
-        "edad":20
-    },{
-        "nombre":"jose ma",
-        "edad":13
-    },{
-        "nombre":"ruth",
-        "edad":13
-        "amigos":["flor","rocio"]  
-    }
-]
+{
+    "nombre":"abel"
+    edad:20
+    "amigos":["no tiene"]
+},{
+    "nombre":"ruth"
+    edad:54
+    "amigos":"flor","hipo"
+}
+
 ```
-## Metodos
-### 1. Convertir texto a lista
+## 1. convertir texto a lista 
+``` python 
+#metodo list
+texto "hola"
+list{texto}
+#["h","o","l","a"]
 
-```python
+#metodo split
+texto="hola como estas, alumnitos lindos"
+texto .split(",")
 
-# Metodo list
+### 2. agregar elementos al final de una lista
+``` python 
+# METODO APPEND -es el metodo que me permite agrefgar elemnetos a }
+#una lista 
 
-texto="hola"
-list(texto)#["h","o","l","a"]
-
-# Metodo split
-texto="hola como estan, alumnitos lindos"
-texto.split(",") #separa desde la coma, trocea texto en arrai a partir de una condicion(limitador)..
-```
-
-### 2. Agregar elementos al final de una lista
-
-``` python
-# Metodo append = es el metodo que me permite agregar elementos a una lista.
 lista=["hola"]
 lista.append("mundo")
 print(lista)
-#["hola","mundo"]
+#["hola",["mundo"] 
 
-# Metodo insert - es el metodo que permite agregar elementos en cualquier ubicacion de mi lista.
-
-lista_nombres=["edith","ruth","luz"]
-lista_nombres.insert(0,"anthony")
-
+#METODO INSERT _ es el metodo que me permite agrega elementos en cualquiera
+#ubicacion de mi lista
+lista_nombre=["edith","ruth","liz"]
+lista_nombre.inser(0."antony")
 ```
 ## 3. elmiminar elemetntos de una lista 
 ``` python
@@ -79,60 +67,93 @@ lista_nombres.insert(0,"anthony")
  #(numero)
   ista_nombre=["edith","ruth","liz"]
  lista_nombre.pop(0)
-```
 
-## 4. buscar un elemento en una lista
+ ### 4. buscar un elemento en una lista
  ```python 
  lista_nombres=[edith","ruth"."lux"]
  indice=lista_nombres[indice])
 
 
  pertenencias="edith" in lista _nombres #tru false
+ ```
+ ### 5. Comparacion de listas
+ podemos hacer uso de los operadores de comparacion para comprar listas 
 
+ **ejm**
+ ``` python
+ comparar=[1,2,3]>[1,2,4]
+ print(compara)
+ #salida:
+ # 1 no porque son iguales en ambas listas 
+ # 2 no porque son iguales en ambas listas
+ # 3 3valua que es menor a 4
+ # entonces la primera lista es menor que la segunda lista 
+print (compara)
 ```
-## 5. Comparacion de listas:
+###
 
-Podemos hacer uso de los operadores de comparacion para comparar listas:
-**Ejm**
-
-```python
-compara=[1,2,3]<[1,2,4]
-# 1 al primer elementos no xq son iguales en ambas listas.
-# 2  no  por que son iguales en ambas listas.
-# 3 evalua que es menor que 4.
-# entonces la primera lista es menor que la segunda lista.
-print(compara)
-#salida:
-```
-
-### 6. Cuidado con las copias.
-
-### 7. FE DE ERRATAS (Actualizar Listas)
-```python
-lista=[1,3,4,5,6]
+###6.cuidados de las copias 
+###7.fe de etrratas(actualixzar listas)
+```python 
+lista=[1,3,4,5]
 lista[0]=2
-print(lista)
-#[2,3,4,5,6]
-
-# modificando lista con diccionario:
-alumnos=[
+prin[lista]
+ #ejemplo en listas 
+  alumnos=[
     {
-        "nombre":"abel",
-        "edad":15
+        "nombre":"abel"
+        "edad":19
 
-    },
-    {
-        "nombre":"charo",
-        "edad":20
+    },{
+        "nombre":"anthony"
+        "edad":29
+
     }
-]
-alumnos[0]["edad"]=30
+  ]
+amumnos[0]{"edad"}=30
+alumno [0]={nombre":"mafer","edad":15} #para actualizar
+alumno [1]["sexo"]="por definir" # adicionamos el sexo para anthony
 print(alumnos)
+```
 
-# alumnos[0]={"nombre":"mafer","edad":15}     para reemplazar todo el diccionario.
-# alumnos [1][sexo]="por definir" agregar una caracteristica mas a charo
+##metodos
+
+son herramientas de python para poder manipular tipos de datos estructurados 
+y tipos de datso tipo strin
+
+### 8. Listas y diccionarios por comprencion
+es una tecnica pythonica que nos permite crear listas y diccionarios en una sola linea conbinandio bucles y deciciones.
+
+> [!NOTE]
+> **vlc*** value loop condicion - valor bucle condicion
+#Lista por comprencion:
+```python
+texto="1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",") if int(n)%2==0]
+print(nueva_lista)
 
 ```
+
+#Diccionario por comprencion:
+
+```python
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={amigo:len(amigo)for amigo in lista_amigos}
+print(diccionario)
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,109 +1,88 @@
-# lista=["abel","anthony","miguel"]
-# print(lista[1:])
-
-
-#en diccionario no se pone el indice, se pone la clave.
-# diccionario={"nombre":"Anthony", "edad":15,"sexo":False }
-# print(diccionario["edad"])
+# lista={"abel","anthony","luz"}
+# diccionario ={"nombre":"antonio","edad":15 }
+# print(diccionario)
 
 # texto="hola"
-# lista_texto=texto=list(texto)
+# lista_texto=list(texto)
 # lista2=[e for e in texto]
-# texto_largo="hola como estas bienvenidos al salon"
-# nueva_lista=texto_largo.split(" ")
+# print(lista2)
 
+# texto_largo="hola comom estan bienvenidos al salon"
+# nueva_texto=texto_largo[16:]
+# nueva_lista=nueva_texto.split(" ")
 # print(nueva_lista)
 
-# texto_largo="loquita_.mp4"
-# nuevo_texto=texto_largo.split(".")
-# print(nuevo_texto [-1])
-
-
-#JUNTAR.
-
 # texto_largo="loquitas_.mp4"
-# nuevo_texto=texto_largo.split("_")
-# print("".join(nuevo_texto)) #el metodo que se utiliza para unir los elementos de una lista de texto.
+# nuevo_elemeno=texto_largo.split(".")
+# print("nuevo_elemento"[-1])
 
-# texto_largo="este es un texto largo chiquitas y chiquitos"
-# nuevo_texto=texto_largo.split(" ")
-# print("/" .join(nuevo_texto)) # Juntar entre elementos pero con espacios.
+#join: es el metodo para unir elemetos en un solo texto 
 
+# texto_largo="este es un texto largo chiquita y chiquitita "
+# nuevo_elemeno=texto_largo.split("  ")
+# print(nuevo_elemeno)
 
+#otra manera
 
-
-
-# numeros=[1,3,4]
-# print(id(numeros))
-# otra_lista=numeros
-# print(id(otra_lista))
-
-# Dato primitivo.
-
-# nombre="abel"
-# print(id(nombre))
-# otro_nombre=nombre
-# print(id(otro_nombre))
+# texto_largo="este es un texto largo chiquita y chiquitita "
+# nuevo_elemeno=texto_largo.split(" ")
+# print("/".join(nuevo_elemeno))
 
 
-# Datos estructurados:
-
+# # #DATOS ESTRUCTUR6ADOS
 # lista_original=[1,2,3,4]
 # copia_lista=lista_original
-
 # lista_original[-1]=15
-
 # print(copia_lista)
 
-#Crear un programa que reciba una lista desordenada y muestre  por terminalla lista ordenada y 
-# la lista previa a ser ordenada
+# # #crear un problema que recie
+# # #DATOS PRIMITIVOba una lista desordenada y muestre por terminal 
+# # #la lista ordenada y la lista pervia a ser ordenada
 
-# lista=[4,76,1,3,6,8,4]
+# # #primera manera
+# # lista=[5,454,5,4,12,87,8]
+# # otra_variable=list.sort()
+# # print(lista)
+# #  #COPY : copia el valor de la lista: el elementeo que esta almacenando
 
-# lista.sort() #sort ordena la lista de mayor a menor
+# #segunda solucion
+# lista=[5,454,5,4,12,87,8]
+
+# copia_lista=lista.copy()
+# otra_variable=list.sort()
+# copia_lista=lista.copy()
 # print(lista)
 
-# metodo 2
 
-# lista=[1,4,5,76,3]
-# copia_lista=lista
-# copia_lista.sort()
-# print(copia_lista)
+# crear una lista de numeros enteros del siguiente texto
 
-#metodo 3
+# texto="1,4,8,9,6"
+# nueva_lista=[]
+# for n in texto.split(","):
+#     nueva_lista.append(int(n))
+# print(nueva_lista)
+# # convertir=texto.split(",")
+# # print(convertir)
 
-# lista=[1,4,5,76,3]
-# copia_lista=lista.copy() #para que copie el valor de la lista, el elemneto que esta almacenado.
-# copia_lista.sort()
-# print(lista)
-# print(copia_lista)
+# # Aplicando la tecnica vlc valor blucle y condicion.
 
+# texto="1,4,8,9,6"
+# nueva_lista=[int(n) for n in texto.split(",") if int(n)%2==0]
+# print(nueva_lista)
 
+# Diccionario por comprension.
 
+# lista_amigos=["abel","anthony","edith","ruth"]
+# diccionario={}
+# for _,v in enumerate(lista_amigos): # _ cuando no usare indice.
+#     diccionario[v]=len(v)
+# print(diccionario) # ejecuta la longitud de cada uno como dicci9onario.
 
+#Aplicando el vlc.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario={amigo:len(amigo)for amigo in lista_amigos}
+print(diccionario)
 
 
 
