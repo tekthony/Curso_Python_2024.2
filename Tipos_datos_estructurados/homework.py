@@ -84,6 +84,7 @@
 
 # crear una lista de los 20 numero primos haciendo uso de comprencion. 
 
-primeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))][:20]
+primeros_primos = [n for n in range(2, 100) if all(n % i != 0 for i in range(2, int(n ** 0.5) + 1))][:20]
 
 print("Los primeros 20 números primos son:", primeros_primos)
+
